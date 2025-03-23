@@ -1,26 +1,225 @@
+/* app.css */
+
 body {
+  font-family: 'Roboto', sans-serif; /* Use a modern sans-serif font */
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0; /* Reset default margin */
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif; /* Use a bold sans-serif for headings */
+  font-weight: 600;
+  color: #222;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+  color: #bbbbbb;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Align nav items and dark mode button */
+  align-items: center; /* Vertically align items */
+  padding: 1.5rem 2rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode nav {
+  background-color: #222222;
+  border-bottom: 1px solid #333333;
+}
+
+nav ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #f9f9f9;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
   color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.App {
-  min-height: 100vh;
+.dark-mode nav a {
+  color: #e0e0e0;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem !important;
-  }
-  
-  p {
-    font-size: 1rem !important;
-  }
+nav a:hover {
+  color: #007bff;
+}
+
+.dark-mode nav a:hover {
+  color: #66a3ff;
+}
+
+nav button { /* Style the dark mode button */
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dark-mode nav button {
+  color: #e0e0e0;
+}
+
+nav button:hover {
+  color: #007bff;
+}
+
+.dark-mode nav button:hover {
+  color: #66a3ff;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, #333, #555);
+  background-size: cover; /* Cover the entire hero section */
+  background-position: center;
+  height: 80vh; /* Adjust hero height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem; /* Increase heading size */
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem; /* Increase paragraph size */
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 800px; /* Limit paragraph width for readability */
+}
+
+.cta-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 25px; /* Adjust button padding */
+  border-radius: 8px; /* Rounder button corners */
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+.about {
+  margin-top: 4rem; /* Increase about section margin */
+  padding: 2rem 0; /* Add padding to about section */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.resume-links {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.resume-links a {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 1rem; /* Adjust margin */
+  transition: background-color 0.3s ease;
+}
+
+.resume-links a:hover {
+  background-color: #1e7e34;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.dark-mode footer {
+  background-color: #222222;
+  border-top: 1px solid #333333;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.dark-mode footer a {
+  color: #66a3ff;
+}
+
+footer a:hover {
+  color: #0056b3;
+}
+
+.dark-mode footer a:hover {
+  color: #66a3ff;
 }
