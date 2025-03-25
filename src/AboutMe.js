@@ -27,10 +27,11 @@ function AboutMe({ darkMode }) {
   };
 
   const imageStyle = {
-    width: '200px',
-    height: '200px',
+    width: '250px',
+    height: '250px',
     borderRadius: '50%',
     objectFit: 'cover',
+    objectPosition: 'center 25%', //used this to make it to where my head isnt being chopped off lol
     marginBottom: '1.5rem',
     boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
   };
@@ -88,7 +89,7 @@ function AboutMe({ darkMode }) {
 
         <div style={{ marginLeft: '0', marginTop: '1rem' }}>
           <p style={textStyle}>
-            As a junior Management Information Systems (MIS) student at Texas A&M University's Mays Business School, I am passionate about using technology to solve real-world business problems. With practical experience ranging from cloud deployment and WordPress hosting on AWS to hands-on team-based competitions, I bring a balanced blend of technical capability and strategic thinking. I've led fitness initiatives as Fitness Chair for Pi Kappa Alpha, supported 250+ members with structured plans, and earned recognition as a CMIS Case Competition finalist, placing 3rd out of 60 teams. My skill set includes AWS Cloud Practitioner certification, programming in Java and C#, database integration with MariaDB, and HTML/WordPress development. I thrive in fast-paced, collaborative environments and am actively seeking internship opportunities in consulting, business technology, and systems analysis to further apply and expand my expertise.
+          Junior Management Information Systems student at Texas A&M University with a strong foundation in cloud technologies, web development, and systems analysis. Developed and deployed a personal portfolio website using React, Firebase (for hosting and backend services), EmailJS, Google reCAPTCHA, and CursorAI, demonstrating both technical ability and attention to user experience. Experienced in managing secure web infrastructure, collaborating across teams, and delivering results under pressure. Known for adaptability, strong problem-solving skills, and a commitment to continuous improvement. Currently seeking internship opportunities in business technology, consulting, or systems implementation to further apply and grow technical and strategic capabilities.
           </p>
         </div>
       </div>

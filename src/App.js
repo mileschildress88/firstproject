@@ -4,6 +4,7 @@ import './App.css';
 import Home from './Home';  // Import the new Home component
 import AboutMe from './AboutMe';  // Import the new AboutMe component
 import ContactMe from './ContactMe';  // Import the ContactMe component
+import LogoImage from './Images/LogoImage.png';  // Import your logo image
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -32,6 +33,12 @@ function App() {
     color: darkMode ? '#fff' : '#333'
   };
 
+  // Define logo styles
+  const logoStyle = {
+    height: '50px',  // Adjust height as needed
+    marginRight: '20px',  // Add some space between logo and links
+  };
+
   // Define link styles based on dark mode
   const linkStyle = {
     margin: '0 10px', 
@@ -52,7 +59,17 @@ function App() {
     <BrowserRouter>
       <div className="App" style={{ fontFamily: 'Arial, sans-serif', maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
         <nav style={navbarStyle}>
-          <div style={{ display: 'flex' }}>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            {/* Add Logo */}
+            <Link to="/">
+              <img 
+                src={LogoImage} 
+                alt="Logo" 
+                style={logoStyle} 
+              />
+            </Link>
+            
+            {/* Navigation Links */}
             <Link to="/" style={linkStyle}>
               Home
             </Link>

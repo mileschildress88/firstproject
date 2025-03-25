@@ -47,10 +47,7 @@ function Home({ darkMode }) {
       </h1>
 
       <p style={paragraphStyle}>
-        This site was built with React as the front-end framework, providing a smooth and responsive user experience.
-        For version control, I used GitHub to track changes and collaborate on code.
-        Cursor's AI-assisted coding features helped me write cleaner, more efficient code.
-        The site is hosted on Firebase Hosting, offering reliable and scalable web hosting.
+      Welcome to my personal website! I built this platform using React, a powerful JavaScript library for creating dynamic user interfaces. To enhance the development experience, I integrated CursorAI, which provided intelligent code suggestions and streamlined the coding process. For backend services, I utilized Firebase to manage data storage, authentication, and to handle hosting and deployment, ensuring a secure, scalable, and accessible platform. To facilitate seamless communication, I implemented EmailJS, enabling direct email interactions without the need for a dedicated server. Additionally, I incorporated Google reCAPTCHA to protect the site from spam and abuse, enhancing overall security. This combination of technologies allowed me to create a responsive, efficient, and user-friendly website that reflects my skills and interests.
       </p>
 
       <p style={paragraphStyle}>
